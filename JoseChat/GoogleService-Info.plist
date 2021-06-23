@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>29246848554-aa8ljqns8428gg81ot3ohemh7a6h272e.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.29246848554-aa8ljqns8428gg81ot3ohemh7a6h272e</string>
+	<key>API_KEY</key>
+	<string>AIzaSyB3gWPQweWto8PPaZo7drM3BtYUyyrmQ8c</string>
+	<key>GCM_SENDER_ID</key>
+	<string>29246848554</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>jose.arguinzzones.JoseChat</string>
+	<key>PROJECT_ID</key>
+	<string>josechat-c8498</string>
+	<key>STORAGE_BUCKET</key>
+	<string>josechat-c8498.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:29246848554:ios:78132640e119ab62bb0d53</string>
+</dict>
+</plist>

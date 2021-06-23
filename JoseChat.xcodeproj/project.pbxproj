@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,7 @@
 		67136F982683BB5A00A97080 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67136F972683BB5A00A97080 /* Assets.xcassets */; };
 		67136F9B2683BB5A00A97080 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67136F992683BB5A00A97080 /* LaunchScreen.storyboard */; };
 		67136FA72683C83D00A97080 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67136FA62683C83D00A97080 /* WelcomeViewController.swift */; };
+		67136FA92683D9CF00A97080 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 67136FA82683D9CF00A97080 /* GoogleService-Info.plist */; };
 		82AACA00926F2B03AC609F9F /* Pods_JoseChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63358A3AD657E94B1CC871D6 /* Pods_JoseChat.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +28,7 @@
 		67136F9A2683BB5A00A97080 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		67136F9C2683BB5A00A97080 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		67136FA62683C83D00A97080 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		67136FA82683D9CF00A97080 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9F7BD3BB10097045050DFE51 /* Pods-JoseChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JoseChat.release.xcconfig"; path = "Target Support Files/Pods-JoseChat/Pods-JoseChat.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -76,6 +78,7 @@
 				67136FA32683C27700A97080 /* View */,
 				67136FA22683C27000A97080 /* Model */,
 				67136F9C2683BB5A00A97080 /* Info.plist */,
+				67136FA82683D9CF00A97080 /* GoogleService-Info.plist */,
 			);
 			path = JoseChat;
 			sourceTree = "<group>";
@@ -120,7 +123,6 @@
 				204A03C3BB46D316D012D5E1 /* Pods-JoseChat.debug.xcconfig */,
 				9F7BD3BB10097045050DFE51 /* Pods-JoseChat.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -184,6 +186,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				67136F9B2683BB5A00A97080 /* LaunchScreen.storyboard in Resources */,
+				67136FA92683D9CF00A97080 /* GoogleService-Info.plist in Resources */,
 				67136F982683BB5A00A97080 /* Assets.xcassets in Resources */,
 				67136F962683BB5700A97080 /* Main.storyboard in Resources */,
 			);
