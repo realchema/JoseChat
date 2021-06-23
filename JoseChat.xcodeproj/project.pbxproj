@@ -13,9 +13,12 @@
 		67136F982683BB5A00A97080 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67136F972683BB5A00A97080 /* Assets.xcassets */; };
 		67136F9B2683BB5A00A97080 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67136F992683BB5A00A97080 /* LaunchScreen.storyboard */; };
 		67136FA72683C83D00A97080 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67136FA62683C83D00A97080 /* WelcomeViewController.swift */; };
+		82AACA00926F2B03AC609F9F /* Pods_JoseChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63358A3AD657E94B1CC871D6 /* Pods_JoseChat.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		204A03C3BB46D316D012D5E1 /* Pods-JoseChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JoseChat.debug.xcconfig"; path = "Target Support Files/Pods-JoseChat/Pods-JoseChat.debug.xcconfig"; sourceTree = "<group>"; };
+		63358A3AD657E94B1CC871D6 /* Pods_JoseChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JoseChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		67136F8B2683BB5700A97080 /* JoseChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JoseChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67136F8E2683BB5700A97080 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		67136F902683BB5700A97080 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		67136F9A2683BB5A00A97080 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		67136F9C2683BB5A00A97080 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		67136FA62683C83D00A97080 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		9F7BD3BB10097045050DFE51 /* Pods-JoseChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JoseChat.release.xcconfig"; path = "Target Support Files/Pods-JoseChat/Pods-JoseChat.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82AACA00926F2B03AC609F9F /* Pods_JoseChat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		552D462B4857D102B934EA22 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				63358A3AD657E94B1CC871D6 /* Pods_JoseChat.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		67136F822683BB5700A97080 = {
 			isa = PBXGroup;
 			children = (
 				67136F8D2683BB5700A97080 /* JoseChat */,
 				67136F8C2683BB5700A97080 /* Products */,
+				B4ABB3CDAC84AD69BB775BCC /* Pods */,
+				552D462B4857D102B934EA22 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +114,16 @@
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		B4ABB3CDAC84AD69BB775BCC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				204A03C3BB46D316D012D5E1 /* Pods-JoseChat.debug.xcconfig */,
+				9F7BD3BB10097045050DFE51 /* Pods-JoseChat.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,9 +131,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 67136F9F2683BB5A00A97080 /* Build configuration list for PBXNativeTarget "JoseChat" */;
 			buildPhases = (
+				02734A361D413D722FF54B6F /* [CP] Check Pods Manifest.lock */,
 				67136F872683BB5700A97080 /* Sources */,
 				67136F882683BB5700A97080 /* Frameworks */,
 				67136F892683BB5700A97080 /* Resources */,
+				2575886955BEB1CC10A0BF85 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -163,6 +190,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		02734A361D413D722FF54B6F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JoseChat-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2575886955BEB1CC10A0BF85 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JoseChat/Pods-JoseChat-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JoseChat/Pods-JoseChat-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JoseChat/Pods-JoseChat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		67136F872683BB5700A97080 /* Sources */ = {
@@ -315,6 +384,7 @@
 		};
 		67136FA02683BB5A00A97080 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 204A03C3BB46D316D012D5E1 /* Pods-JoseChat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -334,6 +404,7 @@
 		};
 		67136FA12683BB5A00A97080 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F7BD3BB10097045050DFE51 /* Pods-JoseChat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
