@@ -251,7 +251,7 @@
             </objects>
             <point key="canvasLocation" x="992.75362318840587" y="116.51785714285714"/>
         </scene>
-        <!--Item 2-->
+        <!--Settings-->
         <scene sceneID="Xl5-xg-gMf">
             <objects>
                 <viewController id="z96-An-Kcm" sceneMemberID="viewController">
@@ -261,13 +261,13 @@
                         <viewLayoutGuide key="safeArea" id="IoL-Ho-5R4"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="Lg3-kZ-1IT"/>
+                    <tabBarItem key="tabBarItem" title="Settings" image="settings" id="Lg3-kZ-1IT"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0C3-Pq-ntJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3158" y="436"/>
         </scene>
-        <!--Item 1-->
+        <!--Call-->
         <scene sceneID="12F-e3-x9R">
             <objects>
                 <viewController id="9tZ-gd-gYe" sceneMemberID="viewController">
@@ -277,7 +277,7 @@
                         <viewLayoutGuide key="safeArea" id="Mvq-aW-qEK"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="tcN-dk-1tV"/>
+                    <tabBarItem key="tabBarItem" title="Call" image="call" id="tcN-dk-1tV"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ts2-zD-MKS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -304,6 +304,8 @@
     </scenes>
     <resources>
         <image name="avatarPlaceholder" width="101" height="101"/>
+        <image name="call" width="30" height="30"/>
+        <image name="settings" width="25" height="25"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
