@@ -14,6 +14,11 @@
 		67136F9B2683BB5A00A97080 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67136F992683BB5A00A97080 /* LaunchScreen.storyboard */; };
 		67136FA72683C83D00A97080 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67136FA62683C83D00A97080 /* WelcomeViewController.swift */; };
 		67136FA92683D9CF00A97080 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 67136FA82683D9CF00A97080 /* GoogleService-Info.plist */; };
+		67D89AFA268619B7000C80BD /* FUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D89AF9268619B7000C80BD /* FUser.swift */; };
+		67D89AFC26861A59000C80BD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D89AFB26861A59000C80BD /* Constants.swift */; };
+		67D89AFE26861D31000C80BD /* CollectionReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D89AFD26861D31000C80BD /* CollectionReference.swift */; };
+		67D89B0026861FF3000C80BD /* HelperFuctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D89AFF26861FF3000C80BD /* HelperFuctions.swift */; };
+		67D89B0226862F75000C80BD /* FinishRegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D89B0126862F75000C80BD /* FinishRegistrationViewController.swift */; };
 		82AACA00926F2B03AC609F9F /* Pods_JoseChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63358A3AD657E94B1CC871D6 /* Pods_JoseChat.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +34,11 @@
 		67136F9C2683BB5A00A97080 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		67136FA62683C83D00A97080 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		67136FA82683D9CF00A97080 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		67D89AF9268619B7000C80BD /* FUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FUser.swift; sourceTree = "<group>"; };
+		67D89AFB26861A59000C80BD /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		67D89AFD26861D31000C80BD /* CollectionReference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionReference.swift; sourceTree = "<group>"; };
+		67D89AFF26861FF3000C80BD /* HelperFuctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperFuctions.swift; sourceTree = "<group>"; };
+		67D89B0126862F75000C80BD /* FinishRegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishRegistrationViewController.swift; sourceTree = "<group>"; };
 		9F7BD3BB10097045050DFE51 /* Pods-JoseChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JoseChat.release.xcconfig"; path = "Target Support Files/Pods-JoseChat/Pods-JoseChat.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -73,6 +83,7 @@
 		67136F8D2683BB5700A97080 /* JoseChat */ = {
 			isa = PBXGroup;
 			children = (
+				67D89B0326862FA8000C80BD /* Helpers */,
 				67136FA52683C38000A97080 /* Supporting Files */,
 				67136FA42683C27D00A97080 /* Controller */,
 				67136FA32683C27700A97080 /* View */,
@@ -86,6 +97,7 @@
 		67136FA22683C27000A97080 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				67D89AF9268619B7000C80BD /* FUser.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -103,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				67136FA62683C83D00A97080 /* WelcomeViewController.swift */,
+				67D89B0126862F75000C80BD /* FinishRegistrationViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -115,6 +128,16 @@
 				67136F972683BB5A00A97080 /* Assets.xcassets */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		67D89B0326862FA8000C80BD /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				67D89AFF26861FF3000C80BD /* HelperFuctions.swift */,
+				67D89AFD26861D31000C80BD /* CollectionReference.swift */,
+				67D89AFB26861A59000C80BD /* Constants.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		B4ABB3CDAC84AD69BB775BCC /* Pods */ = {
@@ -241,9 +264,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67D89AFC26861A59000C80BD /* Constants.swift in Sources */,
 				67136FA72683C83D00A97080 /* WelcomeViewController.swift in Sources */,
+				67D89B0026861FF3000C80BD /* HelperFuctions.swift in Sources */,
 				67136F8F2683BB5700A97080 /* AppDelegate.swift in Sources */,
+				67D89B0226862F75000C80BD /* FinishRegistrationViewController.swift in Sources */,
 				67136F912683BB5700A97080 /* SceneDelegate.swift in Sources */,
+				67D89AFA268619B7000C80BD /* FUser.swift in Sources */,
+				67D89AFE26861D31000C80BD /* CollectionReference.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
