@@ -19,6 +19,7 @@
 		67D89AFE26861D31000C80BD /* CollectionReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D89AFD26861D31000C80BD /* CollectionReference.swift */; };
 		67D89B0026861FF3000C80BD /* HelperFuctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D89AFF26861FF3000C80BD /* HelperFuctions.swift */; };
 		67D89B0226862F75000C80BD /* FinishRegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D89B0126862F75000C80BD /* FinishRegistrationViewController.swift */; };
+		67FD509B268CF71400FC2381 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67FD509A268CF71400FC2381 /* SettingsTableViewController.swift */; };
 		82AACA00926F2B03AC609F9F /* Pods_JoseChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63358A3AD657E94B1CC871D6 /* Pods_JoseChat.framework */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +40,7 @@
 		67D89AFD26861D31000C80BD /* CollectionReference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionReference.swift; sourceTree = "<group>"; };
 		67D89AFF26861FF3000C80BD /* HelperFuctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperFuctions.swift; sourceTree = "<group>"; };
 		67D89B0126862F75000C80BD /* FinishRegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishRegistrationViewController.swift; sourceTree = "<group>"; };
+		67FD509A268CF71400FC2381 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SettingsTableViewController.swift; path = JoseChat/Controller/SettingsTableViewController.swift; sourceTree = SOURCE_ROOT; };
 		9F7BD3BB10097045050DFE51 /* Pods-JoseChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JoseChat.release.xcconfig"; path = "Target Support Files/Pods-JoseChat/Pods-JoseChat.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -106,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				67136F942683BB5700A97080 /* Main.storyboard */,
+				67FD509A268CF71400FC2381 /* SettingsTableViewController.swift */,
 				67136F992683BB5A00A97080 /* LaunchScreen.storyboard */,
 			);
 			path = View;
@@ -272,6 +275,7 @@
 				67136F912683BB5700A97080 /* SceneDelegate.swift in Sources */,
 				67D89AFA268619B7000C80BD /* FUser.swift in Sources */,
 				67D89AFE26861D31000C80BD /* CollectionReference.swift in Sources */,
+				67FD509B268CF71400FC2381 /* SettingsTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
