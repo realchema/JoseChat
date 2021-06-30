@@ -103,6 +103,8 @@ class WelcomeViewController: UIViewController {
         cleanTextFields()
         dismissKeyboard()
         
+        NotificationCenter.default.post(name: NSNotification.Name(rawValue: USER_DID_LOGIN_NOTIFICATION), object: nil, userInfo: [kUSERID: FUser.currentId()])
+        
         //present app here
         print("show the app")
         
