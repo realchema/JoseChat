@@ -23,6 +23,8 @@ func dateFormatter() -> DateFormatter {
     return dateFormatter
 }
 
+
+//convert image from string to image
 func imageFromData(pictureData: String, withBlock: (_ image: UIImage?) -> Void) {
     
     var image: UIImage?
