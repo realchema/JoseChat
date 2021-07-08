@@ -8,10 +8,8 @@
 import UIKit
 import Firebase
 import ProgressHUD
-class UsersTableViewController: UITableViewController, UISearchResultsUpdating {
-    
-    
-    
+
+class UsersTableViewController: UITableViewController, UISearchResultsUpdating, UserTableViewCellDelegate {
     
     @IBOutlet weak var headerView: UIView!
     @IBOutlet weak var filterSegmentedControll: UISegmentedControl!
@@ -70,22 +68,25 @@ class UsersTableViewController: UITableViewController, UISearchResultsUpdating {
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! UserTableViewCell
-        
-        var user: FUser
-        
-        if searchController.isActive && searchController.searchBar.text != ""{
-            user = filteredUsers[indexPath.row]
-        }else {
-            
-            let sectionTitle = self.sectionTitleList[indexPath.section]
-            
-            let users = self.allUsersGroup[sectionTitle]
-            
-            user = users![indexPath.row]
-        }
 
-        cell.generateCellWith(fUser: allUsers[indexPath.row], indexPath: indexPath)
-        return cell
+                var user: FUser
+                
+                if searchController.isActive && searchController.searchBar.text != "" {
+                    
+                    user = filteredUsers[indexPath.row]
+                } else {
+                    
+                    let sectionTitle = self.sectionTitleList[indexPath.section]
+                    
+                    let users = self.allUsersGroup[sectionTitle]
+
+                    user = users![indexPath.row]
+                }
+                
+                cell.generateCellWith(fUser: user, indexPath: indexPath)
+                cell.delegateUserTableViewCell = self
+                
+                return cell
     }
     
     func loadUsers(filter: String) {
@@ -252,6 +253,30 @@ class UsersTableViewController: UITableViewController, UISearchResultsUpdating {
             
             self.allUsersGroup[firstCharacterString]?.append(currentUser)
         }
+    }
+    
+    //MARK: UserTableViewCellDelegate
+    
+    func didTapAvatarImage(indexPath: IndexPath) {
+        print("user avatar tap at\(indexPath)")
+        let profileVC = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "profileView") as! ProfileTableViewController
+                
+                var user: FUser
+                
+                if searchController.isActive && searchController.searchBar.text != "" {
+                    
+                    user = filteredUsers[indexPath.row]
+                } else {
+                    
+                    let sectionTitle = self.sectionTitleList[indexPath.section]
+                    
+                    let users = self.allUsersGroup[sectionTitle]
+                    
+                    user = users![indexPath.row]
+                }
+                
+                profileVC.user = user
+                self.navigationController?.pushViewController(profileVC, animated: true)
     }
 
 }

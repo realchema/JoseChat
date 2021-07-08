@@ -15,6 +15,7 @@
 		67136FA72683C83D00A97080 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67136FA62683C83D00A97080 /* WelcomeViewController.swift */; };
 		67136FA92683D9CF00A97080 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 67136FA82683D9CF00A97080 /* GoogleService-Info.plist */; };
 		676945AE26936A350057B381 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676945AD26936A350057B381 /* UserTableViewCell.swift */; };
+		677A648C26961E17009EC61A /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677A648B26961E17009EC61A /* ProfileTableViewController.swift */; };
 		67BF04F22693707000B220E4 /* UsersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BF04F12693707000B220E4 /* UsersTableViewController.swift */; };
 		67BF04F42693893300B220E4 /* ChatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BF04F32693893300B220E4 /* ChatsViewController.swift */; };
 		67D89AFA268619B7000C80BD /* FUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D89AF9268619B7000C80BD /* FUser.swift */; };
@@ -39,6 +40,7 @@
 		67136FA62683C83D00A97080 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		67136FA82683D9CF00A97080 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		676945AD26936A350057B381 /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
+		677A648B26961E17009EC61A /* ProfileTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewController.swift; sourceTree = "<group>"; };
 		67BF04F12693707000B220E4 /* UsersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersTableViewController.swift; sourceTree = "<group>"; };
 		67BF04F32693893300B220E4 /* ChatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsViewController.swift; sourceTree = "<group>"; };
 		67D89AF9268619B7000C80BD /* FUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FUser.swift; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 				67D89B0126862F75000C80BD /* FinishRegistrationViewController.swift */,
 				67BF04F12693707000B220E4 /* UsersTableViewController.swift */,
 				67BF04F32693893300B220E4 /* ChatsViewController.swift */,
+				677A648B26961E17009EC61A /* ProfileTableViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -292,6 +295,7 @@
 				67BF04F22693707000B220E4 /* UsersTableViewController.swift in Sources */,
 				67D89B0226862F75000C80BD /* FinishRegistrationViewController.swift in Sources */,
 				67136F912683BB5700A97080 /* SceneDelegate.swift in Sources */,
+				677A648C26961E17009EC61A /* ProfileTableViewController.swift in Sources */,
 				67D89AFA268619B7000C80BD /* FUser.swift in Sources */,
 				67D89AFE26861D31000C80BD /* CollectionReference.swift in Sources */,
 				67BF04F42693893300B220E4 /* ChatsViewController.swift in Sources */,
